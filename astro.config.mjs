@@ -23,7 +23,10 @@ export default defineConfig({
           label: "Equipo y Roles",
           items: [{ label: "Miembros del Equipo", slug: "guides/equipo" }],
         },
-
+        {
+          label: "Requisitos y Especificaciones",
+          autogenerate: { directory: "requisites" },
+        },
         {
           label: "Herramientas y Tecnologías",
           items: [{ label: "Stack", slug: "reference/stack" }],
