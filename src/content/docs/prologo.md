@@ -86,6 +86,43 @@ sidebar: [
 ];
 ```
 
+### Alternativa: autogenerate (generar el sidebar automáticamente)
+
+Starlight / Astro permite autogenerar la estructura del sidebar a partir del árbol de archivos. Esto es útil cuando prefieres mantener la navegación basada en la estructura de `src/content/docs` y evitar editar manualmente `astro.config.mjs` cada vez que añades una página.
+
+Ejemplo de configuración en `astro.config.mjs` usando `autogenerate` (sintaxis de ejemplo, ajústala a la API/versión de Starlight usada por tu proyecto):
+
+```javascript
+export default defineConfig({
+  // ...otras opciones
+  starlight: {
+    sidebar: [
+      {
+        label: "Documentación",
+        autogenerate: { directory: "docs" },
+      },
+      // aún puedes tener secciones manuales mezcladas
+      {
+        label: "Referencia",
+        items: [{ label: "Backend", slug: "reference/backend" }],
+      },
+    ],
+  },
+});
+```
+
+Qué esperar con `autogenerate`:
+
+- El generador crea entradas basadas en la estructura de carpetas y archivos bajo `src/content/docs/<directory>`.
+- El orden suele basarse en orden alfabético o en metadatos (por ejemplo `sidebar.order` en el frontmatter), según la implementación.
+- Puedes combinar `autogenerate` con secciones manuales para tener control fino sobre algunas entradas.
+
+Recomendaciones:
+
+- Usa `sidebar.order` en frontmatter para controlar el orden cuando sea necesario.
+- Añade `sidebar: false` en frontmatter para excluir páginas del sidebar si no quieres que aparezcan.
+- Revisa la documentación de la versión de Starlight que usas para detalles (la API puede variar entre versiones).
+
 ## 🔄 Proceso de Contribución (Pull Request)
 
 ### 1. Crear Rama de Feature
