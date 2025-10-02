@@ -31,6 +31,10 @@ export default defineConfig({
           label: "Herramientas y Tecnologías",
           autogenerate: { directory: "reference" },
         },
+        {
+          label: "Reuniones",
+          autogenerate: { directory: "meetings" },
+        },
       ],
     }),
   ],
