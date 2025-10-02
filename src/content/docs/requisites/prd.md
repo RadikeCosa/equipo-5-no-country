@@ -1,3 +1,8 @@
+---
+title: Product Requirements Document (PRD)
+description: Documento de requisitos del producto para la plataforma web de onboarding de créditos para PYMES
+---
+
 **PRD – Plataforma Web de Onboarding de Créditos para PYMES**
 
 **1\. Información General**
