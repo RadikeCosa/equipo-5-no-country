@@ -29,7 +29,7 @@ export default defineConfig({
         },
         {
           label: "Herramientas y Tecnologías",
-          items: [{ label: "Stack", slug: "reference/stack" }],
+          autogenerate: { directory: "reference" },
         },
       ],
     }),
