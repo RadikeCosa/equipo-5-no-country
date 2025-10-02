@@ -1,5 +1,5 @@
 ---
-title: Product Requirements Document (PRD)
+title: Documento de Requisitos del Producto (PRD)
 description: Flujo y entidades para la plataforma web de onboarding de créditos para PYMES
 ---
 
