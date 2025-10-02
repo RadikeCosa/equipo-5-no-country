@@ -1,5 +1,5 @@
 ---
-title: Documento de Requisitos del Producto (PRD)
+title: Flujo de la App
 description: Flujo y entidades para la plataforma web de onboarding de créditos para PYMES
 ---
 
