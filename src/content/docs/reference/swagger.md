@@ -12,7 +12,7 @@ Este proyecto usa Swagger (OpenAPI 3.0) para documentar la API REST del sistema 
 Una vez que el servidor esté en ejecución, la interfaz de Swagger UI está disponible en:
 
 - Entorno de desarrollo: http://localhost:3000/api-docs
-- Entorno de producción: https://tu-dominio.com/api-docs
+- Entorno de producción: https://equipo5-webapp-onboardingcreditos.onrender.com/api-docs/
 
 ## Resumen de la documentación
 
