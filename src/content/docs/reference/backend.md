@@ -147,10 +147,9 @@ Consejos de seguridad:
 
 ---
 
-Si quieres, puedo también:
+## Dependencias instaladas para Swagger 3/10
 
-- Añadir una sección con ejemplos de endpoints (curl) para probar el servidor.
-- Crear un archivo `.env.example` con los placeholders listos para el repo.
-- Añadir una entrada a `README.md` con estos pasos.
+Las siguientes dependencias están en `package.json` (versiones actuales):
 
-Fin del documento.
+- `swagger-jsdoc`: ^6.2.8
+- `swagger-ui-express`: ^5.0.1
